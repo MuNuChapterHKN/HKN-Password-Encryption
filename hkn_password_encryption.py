@@ -31,7 +31,7 @@ def encrypt():
     # richiedi una chiave
     key = ''
     while not key or len(key) > 16:
-        key = input('Key (max 16 byte): ')
+        key = input('Key (max 16 bytes): ')
     if len(key) < 16:
         key = pad(key.encode(), 16)
     else:
